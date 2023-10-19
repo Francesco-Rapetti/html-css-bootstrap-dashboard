@@ -1,12 +1,16 @@
-/* width */
+:root {
+    --header-height: 70px;
+    --side-menu-width: 160px;
+}
 
-.w-160px { width: 160px; }
+body {
+    background-color: black;
+}
 
 /* HEADER */
 
 header {
-    height: 60px;
-    background-color: #f8f9fa;
+    height: var(--header-height);
 }
 
 header .searchBar {
@@ -19,8 +23,25 @@ header .searchBar input[type="text"] {
     background-size: 18px;
 }
 
-.bgLightGrey { background-color: #f8f9fa; }
+/* MAIN */
 
-body {
-    background-color: black;
+/* side menu */
+
+section#sideMenu {
+    width: var(--side-menu-width);
+    height: calc(100vh - var(--header-height));
+    background-image: url(../img/sidebar-bg.png);
+    background-color: #0e2336;
+}
+
+/* content */
+
+section#content {
+    background-color: red; /* debug color */
+    position: absolute;
+    left: var(--side-menu-width);
+    top: var(--header-height);
+    width: calc(100vw - var(--side-menu-width));
+    height: calc(100vh - var(--header-height));
+    overflow-y: auto;
 }
