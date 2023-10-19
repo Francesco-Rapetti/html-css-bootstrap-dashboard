@@ -32,6 +32,7 @@ section#sideMenu {
     height: calc(100vh - var(--header-height));
     background-image: url(../img/sidebar-bg.png);
     background-color: #0e2336;
+    overflow-y: hidden;
 }
 
 /* content */
