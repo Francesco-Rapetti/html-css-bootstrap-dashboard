@@ -1,6 +1,6 @@
 :root {
     --header-height: 70px;
-    --side-menu-width: 160px;
+    --side-menu-width: 150px;
 }
 
 body {
@@ -33,6 +33,11 @@ section#sideMenu {
     background-image: url(../img/sidebar-bg.png);
     background-color: #0e2336;
     overflow-y: hidden;
+}
+
+section#sideMenu .row:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
 }
 
 /* content */
