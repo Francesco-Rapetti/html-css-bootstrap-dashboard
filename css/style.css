@@ -1,8 +1,19 @@
+/* width */
+
+.w-160px { width: 160px; }
+
 /* HEADER */
 
 header {
     height: 60px;
+    background-color: #f8f9fa;
 }
+
+header .searchBar {
+    width: calc(100% - 320px);
+}
+
+.bgLightGrey { background-color: #f8f9fa; }
 
 body {
     background-color: black;
