@@ -10,6 +10,12 @@
     min-width: 45%;
 }
 
+.table {
+    border-collapse: separate;
+}
+
+.w-30px { width: 30px; }
+
 /* hide arrows for Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -23,12 +29,12 @@ input[type=number] {
     -moz-appearance: textfield;
 }
 
-.badge {
+#head .badge {
     background-color: #205bb4!important;
 }
 
-.badge:hover {
-    background-color: #153f7d!important;
+#head .badge:hover {
+    background-color: #194c97!important;
     cursor: pointer;
 }
 
@@ -77,8 +83,8 @@ section#content {
 }
 
 /* media queries */
-
-@media screen and (max-width: 767px) {
+/* lg */
+@media screen and (max-width: 991px) {
     section#sideMenu {
         width: var(--side-menu-width-mobile);
     }
