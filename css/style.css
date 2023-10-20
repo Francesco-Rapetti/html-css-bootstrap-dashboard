@@ -43,6 +43,10 @@ header .searchBar input[type="text"] {
     background-size: 18px;
 }
 
+header #mobileLogo {
+    max-width: 80px;
+}
+
 /* MAIN */
 
 /* side menu */
