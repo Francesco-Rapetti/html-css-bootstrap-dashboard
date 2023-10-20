@@ -3,8 +3,21 @@
     --side-menu-width: 150px;
 }
 
-body {
-    background-color: black;
+.offcanvas {
+    min-width: 40%;
+}
+
+/* hide arrows for Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* hide arrows for Firefox */
+input[type=number] {
+    appearance: textfield;
+    -moz-appearance: textfield;
 }
 
 /* HEADER */
@@ -43,7 +56,6 @@ section#sideMenu .row:hover {
 /* content */
 
 section#content {
-    background-color: red; /* debug color */
     position: absolute;
     left: var(--side-menu-width);
     top: var(--header-height);
