@@ -6,10 +6,6 @@
     --side-menu-width-mobile: 70px;
 }
 
-.offcanvas {
-    min-width: 45%;
-}
-
 .table {
     border-collapse: separate;
 }
@@ -92,5 +88,9 @@ section#content {
     section#content {
         left: var(--side-menu-width-mobile);
         width: calc(100vw - var(--side-menu-width-mobile));
+    }
+
+    .offcanvas {
+        width: 100% !important;
     }
 }
