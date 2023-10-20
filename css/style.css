@@ -6,6 +6,8 @@
     --side-menu-width-mobile: 70px;
 }
 
+.pointer { cursor: pointer; }
+
 .table {
     border-collapse: separate;
 }
