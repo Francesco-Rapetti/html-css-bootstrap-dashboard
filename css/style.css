@@ -1,10 +1,12 @@
+/* GENERAL */
+
 :root {
     --header-height: 70px;
     --side-menu-width: 150px;
 }
 
 .offcanvas {
-    min-width: 40%;
+    min-width: 45%;
 }
 
 /* hide arrows for Chrome, Safari, Edge, Opera */
@@ -18,6 +20,15 @@ input::-webkit-inner-spin-button {
 input[type=number] {
     appearance: textfield;
     -moz-appearance: textfield;
+}
+
+.badge {
+    background-color: #205bb4!important;
+}
+
+.badge:hover {
+    background-color: #153f7d!important;
+    cursor: pointer;
 }
 
 /* HEADER */
