@@ -3,6 +3,7 @@
 :root {
     --header-height: 70px;
     --side-menu-width: 150px;
+    --side-menu-width-mobile: 70px;
 }
 
 .offcanvas {
@@ -73,4 +74,17 @@ section#content {
     width: calc(100vw - var(--side-menu-width));
     height: calc(100vh - var(--header-height));
     overflow-y: auto;
+}
+
+/* media queries */
+
+@media screen and (max-width: 767px) {
+    section#sideMenu {
+        width: var(--side-menu-width-mobile);
+    }
+
+    section#content {
+        left: var(--side-menu-width-mobile);
+        width: calc(100vw - var(--side-menu-width-mobile));
+    }
 }
