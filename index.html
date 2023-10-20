@@ -15,34 +15,37 @@
 
 <body>
     <!-- HEADER -->
-    <header class="d-flex align-content-center bg-white">
-        <div class="d-flex w-100">
-            <div class="m-auto p-2">
-                <a href="#">
-                    <img src="img/logo.svg" alt="Logo">
-                </a>
-            </div>
-
-            <div class="searchBar m-auto">
-                <form>
-                    <div class="form-group">
-                        <input class="form-control bg-secondary-subtle" type="text"
-                            placeholder="Prova a cercare: Lezioni di Laravel">
+    <header class="d-flex align-content-center justify-content-center bg-white">
+        <div class="container-fluid">
+            <div class="row h-100">
+                <!-- logo -->
+                <div class="col-auto px-3 align-self-center">
+                    <a href="#">
+                        <img src="img/logo.svg" alt="Logo">
+                    </a>
+                </div>
+                <!-- searchbar -->
+                <div class="col searchBar align-self-center">
+                    <form>
+                        <div class="form-group">
+                            <input class="form-control bg-secondary-subtle" type="text"
+                                placeholder="Prova a cercare: Lezioni di Laravel">
+                        </div>
+                    </form>
+                </div>
+                <!-- icons -->
+                <div class="col-auto px-3 align-self-center">
+                    <i class="fas fa-list me-3 text-secondary d-none d-lg-inline"></i>
+                    <i class="fas fa-question-circle me-3 text-secondary d-none d-lg-inline"></i>
+                    <i class="fa-solid fa-ellipsis-vertical text-secondary me-3 d-none d-lg-inline"></i>
+                    <i class="fas fa-bell text-warning" type="button" data-bs-toggle="dropdown" aria-expanded="false"></i>
+                    <div class="dropdown">
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
                     </div>
-                </form>
-            </div>
-
-            <div class="text-end m-auto p-2">
-                <i class="fas fa-list me-3 text-secondary d-none d-lg-inline"></i>
-                <i class="fas fa-question-circle me-3 text-secondary d-none d-lg-inline"></i>
-                <i class="fa-solid fa-ellipsis-vertical text-secondary me-3 d-none d-lg-inline"></i>
-                <i class="fas fa-bell text-warning" type="button" data-bs-toggle="dropdown" aria-expanded="false"></i>
-                <div class="dropdown">
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
                 </div>
             </div>
         </div>
@@ -254,6 +257,13 @@
                             <span class="fs-1">125</span>
                         </div>
                     </div>
+                </div>
+            </div>
+
+            <!-- cards -->
+            <div class="container">
+                <div class="row">
+
                 </div>
             </div>
         </section>
