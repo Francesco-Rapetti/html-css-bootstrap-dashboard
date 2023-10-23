@@ -52,8 +52,6 @@ header #mobileLogo {
     max-width: 80px;
 }
 
-/* MAIN */
-
 /* side menu */
 
 section#sideMenu {
@@ -72,10 +70,7 @@ section#sideMenu .row:hover {
 /* content */
 
 section#content {
-    position: absolute;
-    left: var(--side-menu-width);
-    top: var(--header-height);
-    width: calc(100vw - var(--side-menu-width));
+    width: calc(100% - var(--side-menu-width));
     height: calc(100vh - var(--header-height));
     overflow-y: auto;
 }
@@ -89,7 +84,7 @@ section#content {
 
     section#content {
         left: var(--side-menu-width-mobile);
-        width: calc(100vw - var(--side-menu-width-mobile));
+        width: calc(100% - var(--side-menu-width-mobile));
     }
 
     .offcanvas {
